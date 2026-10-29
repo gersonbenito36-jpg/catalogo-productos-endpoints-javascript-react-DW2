@@ -1,0 +1,235 @@
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    color: black;
+}
+
+nav {
+    background-color: #0F172A;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2px 2px 8px black;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.search-form{
+    background-color: #c6c8ca;
+    display: flex;
+    width: 100%;
+    padding: 8px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+.search-form button{
+    padding: 10px;
+    border-radius: 4px;
+    border-color: none;
+    outline: none;
+    background-color: #0F172A;
+    color: white;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-weight: bold;
+}
+
+.input-search{
+    width: 90%;
+    padding: 8px;
+    background-color:rgb(246, 248, 250);
+    border: solid 1px  #adafb3;
+    outline: none;
+    border-radius: 4px;
+    margin-right: 6px;
+}
+
+.product-form{
+    background-color: #c6c8ca;
+    margin-top: 6px;
+    border: 1px solid #adafb3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 16px;
+    border-radius: 8px;
+}
+.information-card{
+    background-color: #f9f9fd;
+    margin-top: 10px;
+    border-radius: 4px;
+    padding: 10px;
+}
+.actions{
+    background-color: rgb(244, 245, 250);
+    display: flex;
+    padding: 6px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+.detalles-link{
+    color: #05256e;
+    font-family: inherit;
+    font-display: block;
+    font-weight: bold;
+}
+.detalles-link:hover{
+    color: rgb(10, 10, 253);
+    text-decoration: underline;
+}
+.botones-card{
+    margin-top: 4px;
+}
+.botones-card button{
+    border-radius:12px;
+    margin: 0;
+    outline: none;
+    border: none;
+    padding: 12px 16px;
+    margin: 4px;
+    cursor: pointer;
+    width: auto;
+}
+.boton-editar{
+    background-color: rgb(30, 90, 255);
+    color: white;
+    font-family: inherit;
+    font-weight: bold;
+}
+.boton-eliminar{
+    background-color: rgb(255, 68, 68);
+    color: white;
+    font-family: inherit;
+    font-weight: bold;
+}
+.boton-editar:hover{
+    background-color: rgb(2, 2, 180);
+}
+.boton-eliminar:hover{
+    background-color: rgb(226, 0, 0);
+}
+
+.nombre-precio{
+    padding: 10px;
+    width: 50%;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    border: 1px solid #adafb3;
+    outline: none;
+}
+.nombre-precio::placeholder{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+.producto-descripcion{
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #adafb3;
+    outline: none;
+    
+}
+.producto-descripcion::placeholder{
+    font-family: inherit;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.button-textarea{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: #0F172A;
+    color: white;
+    font-family: inherit;
+    width: 20%;
+    border-radius: 8px;
+    border: none;
+    margin-top: 4px;
+}
+.button-textarea:hover{
+    cursor: pointer;
+    background-color: #142141;
+}
+
+
+.detalle-producto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 2fr));
+    gap: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    background-color: rgb(218, 218, 218);
+}
+
+.product-card{
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgb(39, 67, 104);
+}
+.todas-categorias{
+    background-color: rgb(216, 213, 213);
+    padding: 4px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.pagination{
+    padding: 8px;
+}
+
+.pagination button{
+    background-color: #adafb3;
+    border-radius: 8px;
+    padding: 4px 12px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 4px;
+}
+.pagination button:hover{
+    background-color: #737477;
+    color: white;
+}
+
+.product-card img{
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+}
+
+
+main{
+    padding: 50px;
+}
